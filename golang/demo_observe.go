@@ -441,7 +441,6 @@ func (c *GalileoClient) DemoLogRAGWorkflows(authToken string, projectID string) 
 							"top_k":        "2", // String version for numeric values
 							"similarity":   "cosine",
 						},
-						"status_code": 200,
 					},
 					map[string]interface{}{
 						"type":          "llm",
@@ -458,7 +457,6 @@ func (c *GalileoClient) DemoLogRAGWorkflows(authToken string, projectID string) 
 							"temperature":       "0.2", 
 							"max_tokens":        "300", 
 						},
-						"status_code": 200,
 					},
 				},
 			},
