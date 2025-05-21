@@ -225,7 +225,7 @@ func (c *GalileoClient) CreateAlert(authToken, projectID string) (*CreateAlertRe
 	
 	// Email configuration - in a real application, replace with actual email
 	emailConfig := map[string]interface{}{
-		"recipients": []string{"nachiket@galileo.ai"},
+		"recipients": []string{"new-user@galileo.ai"},
 	}
 
 	reqBodyData := CreateAlertRequest{

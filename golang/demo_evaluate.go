@@ -189,7 +189,7 @@ func (c *GalileoClient) CreateProject(authToken string) (*CreateProjectResponse,
 	url := fmt.Sprintf("%s/projects", c.rootURL)
 	
 	reqBody, err := json.Marshal(CreateProjectRequest{
-		Name:     fmt.Sprintf("test-nachiket-project-new-golang-2"),
+		Name:     fmt.Sprintf("golang-evaluate-project-%d", time.Now().Unix()),
 		IsPublic: false,
 		Type:     "prompt_evaluation",
 	})
@@ -355,7 +355,7 @@ func main() {
 	fmt.Printf("PROJECT CREATED: %s\n", projectResp.Name)
 
 	// Create run
-	runName := fmt.Sprintf("test-nachiket-run-golang-new")
+	runName := fmt.Sprintf("golang-evaluate-run-%d", time.Now().Unix())
 	fmt.Println("=== CREATING RUN ===")
 	runResp, err := client.CreateRun(loginResp.AccessToken, projectResp.ID, runName)
 	if err != nil {

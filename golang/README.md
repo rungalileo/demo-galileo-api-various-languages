@@ -18,15 +18,25 @@ This is a Go implementation of the Galileo API client that demonstrates how to i
 cd golang
 ```
 
-2. Set the required environment variables:
+2. Install the dependencies:
+```bash
+go mod tidy
+```
+
+3. Set the required environment variables:
 ```bash
 export GALILEO_API_KEY=your-api-key
 export GALILEO_API_URL=https://api.xyz.rungalileo.io
 ```
 
-3. Run the demo:
+4. Run the Observe demo:
 ```bash
-go run demo.go
+go run demo_observe.go
+```
+
+5. Run the Evaluate demo:
+```bash
+go run demo_evaluate.go
 ```
 
 ## What the Demo Does
