@@ -18,7 +18,7 @@ import (
 )
 
 const (
-	galileoAPIBaseURL = "https://api.galileo.ai"
+	galileoAPIBaseURL = "https://api.[DOMAIN_NAME].galileocloud.io"   #change this line to your cluster's api base url
 )
 
 // --- Public Config Structs ---
